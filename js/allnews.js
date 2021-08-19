@@ -6,7 +6,7 @@ let addNews = ``;
 
 async function feachNews() {
 
-    const newsdata = await (await fetch('json/data-all.json')).json();
+    const newsdata = await (await fetch('/dawaycomua/json/data-all.json')).json();
     const news = newsdata;
 
     for (let i = news.all.length - 1; i >= 0; i--) {
@@ -40,11 +40,11 @@ async function feachNews() {
                             </div>
                         </div>
                         <div id="fb-root"></div>
-                        <p class="part-start"> <a href="../../${news.all[i].link}"> Читати більше...</a></p>
+                        <p class="part-start"> <a href="/dawaycomua/${news.all[i].link}"> Читати більше...</a></p>
                         <div class="published" pub="${news.all[i].publicDate}"> Опубліковано ${addTextAboutAgo}</div>
                     </div>
                 </div>
-                <div class="fb-comments" data-href="https://daway.com.ua" data-width="100%" data-numposts="1"></div>`;
+                <div class="fb-comments" data-href="https://drepetskyi.github.io/dawaycomua/" data-width="100%" data-numposts="1"></div>`;
 
 
         acrticleContainer.innerHTML = addNews;
