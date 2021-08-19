@@ -1,0 +1,116 @@
+header{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: linear-gradient(-110deg, rgb(252, 145, 163), rgb(222, 238, 247), white);
+}
+.logo-img{
+    display: flex;
+    align-items: center;
+}
+.img-header{
+    height: 12vmin;
+}
+nav div a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: black;
+    width: 20%;
+}
+nav ul{
+    display: none;
+} 
+.mob-menu{
+    display: none;
+}
+.yellow-line{
+    height: 2px; 
+    width: 250px; 
+    position: absolute; 
+    background: yellow;
+    animation: ly;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+} 
+.date{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+} 
+@keyframes ly{
+    0% {left: 2%;}
+    100% {left: 70%;}
+}
+.phrase{
+    font-size: large;
+    text-align: right;
+}
+/* style for main*/
+main{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+main div {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+
+}
+
+/* style for footer*/
+.main-footer{
+    border-top: 2px solid #d657c1;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2em;
+}
+.main-footer a, .login a, .text-for-footer{
+    text-decoration: none;
+    color: lightgray;
+}
+
+/*style for header in phone*/
+@media only screen and (max-width: 1235px) {
+    .logo-img img{
+        display: none;
+    }
+    nav{
+       justify-content: space-between;
+    }
+    nav ul{
+        display: none;
+    }
+    .mob-menu{
+        display: none;
+    }
+    .yellow-line {
+        display: block;
+        width: 50px; 
+    }
+    .date{
+        font-size: small;
+    }
+    .phrase{
+        font-size: .6rem;       
+    }
+    .main-footer{
+        font-size: .8em;
+    }
+}
+
+#consent-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 8rem;
+    background-color: #fff;
+    transition: opacity 1s ease;
+}
