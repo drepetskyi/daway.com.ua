@@ -160,7 +160,7 @@
             "id": "14",
             "image": "img/life/computer/rating.png",
             "altForImg": "Excel",
-            "link": "life/tech/ltech1.html",
+            "link": "dawaycomua/life/tech/ltech1.html",
             "headline": "&emsp; Робимо в Екселі простий динамічний рейтинг працівників, який показує результати за обраний місяць, або за весь рік. <br> &emsp; Корисним буде використовувати такий підхід у багатьох щоденних звітах у вашій роботі, чи в презентаціях. Для формування рейтингу використовуємо функції VLOOKUP, RANK, SORT.",
             "heading": "Поради. Комп'ютери. Excel",
             "headingup": "Життя",
