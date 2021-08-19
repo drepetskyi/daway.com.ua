@@ -40,7 +40,7 @@ document.querySelector('.date').innerHTML = day + ' ' + date.getDate() + ' ' + m
 
 // ----- phrasese, random
 async function fetchJson() {
-    const response = await fetch('json/data-phrases.json');
+    const response = await fetch('/dawaycomua/json/data-phrases.json');
     const phrase = await response.json();
     const phrasesContainer = document.querySelector('.phrases');
     let phrasesDomSrring = '';
