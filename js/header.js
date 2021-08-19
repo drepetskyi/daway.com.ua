@@ -66,7 +66,7 @@ document.querySelector('.main-footer').innerHTML += `
 </div> -->
 
 <div id="consent-popup" class="hidden">
-<p>Продовжуючи перебувати на сайті Ви погоджуєтесь з <a href="https://daway.com.ua/cookie.html" id="condition"> умовами його використання</a>.
+<p>Продовжуючи перебувати на сайті Ви погоджуєтесь з <a href="cookie.html" id="condition"> умовами його використання</a>.
     <a id="accept" href="#">Згоден</a>
 </p>
 </div>
