@@ -6,7 +6,7 @@ let addNews = ``;
 
 async function feachNews() {
 
-    const newsdata = await (await fetch('../../json/data-all.json')).json();
+    const newsdata = await (await fetch('/dawaycomua/json/data-all.json')).json();
     const news = newsdata;
 
     for (let i = news.all.length - 1; i >= 0; i--) {
