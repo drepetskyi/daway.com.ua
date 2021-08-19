@@ -4,11 +4,11 @@ headerContainer.innerHTML +=
 `<nav>
 <div class="logo-img">
 <img class="img-header" src="img/logo.png" alt="картинка для хедера">
-<a href="index.html">daway.news</a>
+<a href="/index.html">daway.news</a>
 </div>
 <ul>
-<li> <a href = "events/events.html"> Події </a> </li>
-<li> <a href = "finance/finance.html"> Фінанси </a> </li>
+<li> <a href = "/events/events.html"> Події </a> </li>
+<li> <a href = "/finance/finance.html"> Фінанси </a> </li>
 <li> <a href = "sports/sports.html"> Спорт </a> </li>
 <li> <a href = "life/life.html"> Життя </a> </li>
 </ul>
