@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-188091603-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-188091603-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daway | Як в Екселі зробити рейтинг менеджерів чи продавців? Простий спосіб зробити динамічні рейтинги.
+        Використовуємо функції Vlookup, Rank, Sort</title>
+    <meta name="description"
+        content="Рейтинги продавців, менеджерів в Excel, Екселі. Як просто зробити динамічний рейнтинг. Функції Vlookup, Rank, Sort">
+    <meta name="keywords" content="Як просто зробити динамічний рейнтинг в Excel. Функції Vlookup, Rank. Sort" />
+    <link rel="icon" href="../../img/logo.png">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/oneNew.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <script data-ad-client="ca-pub-5389014389884239" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+</head>
+
+<body>
+    <header class="all-header"> </header>
+
+    <main>
+        <article class="art-news">
+            <div class="card-news">
+                <div class="text-for-news">
+                    <div class="part-one">
+                        <img class="img-for-news" src="../../img/life/computer/rating.png" alt="Excel">
+                        <div class="headline">
+                            <h1> <a>&emsp; Робимо в Екселі простий динамічний рейтинг працівників, який показує
+                                    результати за обраний місяць, або за весь рік. <br> &emsp; Корисним буде
+                                    використовувати такий підхід у багатьох щоденних звітах у вашій роботі, чи в
+                                    презентаціях. Для формування рейтингу використовуємо функції VLOOKUP, RANK, SORT.
+                                </a> </h1>
+                            <div class="heading">Поради. Комп'ютери. Excel</div>
+                        </div>
+                    </div>
+                    <div id="fb-root"></div>
+                    <p class="part-start"><br> &emsp; Припустимо у вас є таблиця з результатами виконання КРІ
+                        менеджерами за кожен місяць, на основі якої накопичувальним підсумком потрібно показувати, яке
+                        місце в рейтингу займає кожен з менеджерів в тому чи іншому місяці. Нижче приклад такої таблиці.
+                        <img class="img-for-text" src="../../img/life/computer/base_tabl.png"
+                            alt="приклад базової таблиці">
+
+                        <br> &emsp; КРОК 1. Робимо окрему таблицю, в які буде відображатись лише потрібний нам період.
+                        Для цього використовуємо функцію VLOOKUP.
+                        <img class="img-for-text" src="../../img/life/computer/step1.png"
+                            alt="крок 1. використовуємо vlookup">
+
+                        <br> &emsp; КРОК 2. Вираховуємо місце менеджера в рейтингу. Для цього використовуємо функцію
+                        RANK. Ця функція відображає порядковий номер найбільшого числа із заданого діапазону чисел.
+                        <img class="img-for-text" src="../../img/life/computer/step2.png"
+                            alt="крок 2. Використовуємо Rank">
+
+                        <br> &emsp; КРОК 3. Робимо зведену таблицю (з Роздільником) для обрання потрібного нам періоду.
+                        Зведену таблицю робимо на основі двох колонок, 1-ша колонка місяці (month), 2-га колонка (num)
+                        це порядковий номер колонок з базової таблиці (з кроку 1).
+                        <img class="img-for-text" src="../../img/life/computer/step3.png"
+                            alt="Крок 3. робимо зведену таблицю із роздільником">
+
+                        <br> &emsp; КРОК 4. Прив’язуємо нашу таблицю з місцем менеджера в рейтингу (крок 2) до
+                        роздільника (крок 3). Для цього потрібно у нашу формулу VLOOKUP, змінити визначення номеру
+                        потрібної нам колонки.
+                        <img class="img-for-text" src="../../img/life/computer/step4.png"
+                            alt="Крок 4. робимо прив'язку до роздільника">
+
+                        <br> &emsp; КРОК 5. Сортуємо на окремому аркуші менеджерів за обраний період. Для цього нам
+                        потрібно перенести (скопіювати) роздільник та використати функцію SORT.
+                        <img class="img-for-text" src="../../img/life/computer/step5.png"
+                            alt="крок 5. копіюємо роздільним. функція SORT">
+
+                        <br><br> &emsp; Коротка відео-інструція до цієї статті:
+                        <br>
+                        <iframe class="video-for-text" width="560" height="315"
+                            src="https://www.youtube.com/embed/jHzwfZD4qcQ?start=1" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+
+                        <br> &emsp; Сподіваємось, що на основі такого прикладу ви зможете налаштувати потрібні
+                        вам формати звітів.
+                    </p>
+                    <div class="published" pub="${news[i].publicDate}"> Опубліковано 6-29-2021</div>
+                </div>
+            </div>
+            <div class="fb-comments" data-href="https://daway.com.ua" data-width="100%" data-numposts="1"></div>
+        </article>
+    </main>
+
+    <footer class="main-footer"></footer>
+
+    <!------------ js -------------->
+    <script src="../../js/header.js"></script>
+    <script src="../../js/agreecookies.js"></script>
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v9.0"
+        nonce="oHLQeBvl"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
