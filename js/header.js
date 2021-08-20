@@ -3,7 +3,7 @@ const headerContainer = document.querySelector('.all-header');
 headerContainer.innerHTML += 
 `<nav>
 <div class="logo-img">
-<img class="img-header" src="/drepetskyi/dawaycomua/img/logo.png" alt="картинка для хедера">
+<img class="img-header" src="img/logo.png" alt="картинка для хедера">
 <a href="/dawaycomua/index.html">daway.news</a>
 </div>
 <ul>
