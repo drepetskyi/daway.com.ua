@@ -4,13 +4,13 @@ headerContainer.innerHTML +=
 `<nav>
 <div class="logo-img">
 <img class="img-header" src="../../img/logo.png" alt="картинка для хедера">
-<a href="/../../index.html">daway.news</a>
+<a href="../../index.html">daway.news</a>
 </div>
 <ul>
 <li> <a href = "../../events/events.html"> Події </a> </li>
-<li> <a href = "/../../finance/finance.html"> Фінанси </a> </li>
-<li> <a href = "/../../sports/sports.html"> Спорт </a> </li>
-<li> <a href = "/../../life/life.html"> Життя </a> </li>
+<li> <a href = "../../finance/finance.html"> Фінанси </a> </li>
+<li> <a href = "../../sports/sports.html"> Спорт </a> </li>
+<li> <a href = "../../life/life.html"> Життя </a> </li>
 </ul>
 <div class="mob-menu">
 <div class="btn-group">
@@ -18,10 +18,10 @@ headerContainer.innerHTML +=
         menu
     </button>
     <ul class="dropdown-menu dropdown-menu-end">
-        <li> <button class="dropdown-item" type="button"><a href = "/dawaycomua/events/events.html">події</a></button></li>
-        <li> <button class="dropdown-item" type="button"><a href = "/dawaycomua/finance/finance.html">фінанси</a></button></li>
-        <li> <button class="dropdown-item" type="button"><a href = "/dawaycomua/sports/sports.html">спорт</a></button></li>
-        <li> <button class="dropdown-item" type="button"><a href = "/dawaycomua/life/life.html">життя</a></button></li>
+        <li> <button class="dropdown-item" type="button"><a href = "../../events/events.html">події</a></button></li>
+        <li> <button class="dropdown-item" type="button"><a href = "../../finance/finance.html">фінанси</a></button></li>
+        <li> <button class="dropdown-item" type="button"><a href = "../../sports/sports.html">спорт</a></button></li>
+        <li> <button class="dropdown-item" type="button"><a href = "../../life/life.html">життя</a></button></li>
     </ul>
 </div>
 </div>
@@ -40,7 +40,7 @@ document.querySelector('.date').innerHTML = day + ' ' + date.getDate() + ' ' + m
 
 // ----- phrasese, random
 async function fetchJson() {
-    const response = await fetch('/dawaycomua/json/data-phrases.json');
+    const response = await fetch('../../json/data-phrases.json');
     const phrase = await response.json();
     const phrasesContainer = document.querySelector('.phrases');
     let phrasesDomSrring = '';
@@ -57,8 +57,8 @@ setInterval(fetchJson, 10000);
 
 // -------- footer for all
 document.querySelector('.main-footer').innerHTML += `
-<a href="/dawaycomua/index.html">daway.news</a>
-<a href="/dawaycomua/cookie.html">Про нас</a>
+<a href="../../index.html">daway.news</a>
+<a href="../../cookie.html">Про нас</a>
 <div class="text-for-footer"> created by D&A.way
 </div>
 <!-- <div class="login">
@@ -66,8 +66,8 @@ document.querySelector('.main-footer').innerHTML += `
 </div> -->
 
 <div id="consent-popup" class="hidden">
-<p>Продовжуючи перебувати на сайті Ви погоджуєтесь з <a href="/dawaycomua/cookie.html" id="condition"> умовами його використання</a>.
-    <a id="accept" href="#">Згоден</a>
+<p>Продовжуючи перебувати на сайті Ви погоджуєтесь з <a href="../../cookie.html" id="condition"> умовами його використання</a>.
+    <a id="accept" href="#">Згода</a>
 </p>
 </div>
 `
