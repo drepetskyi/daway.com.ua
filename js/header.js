@@ -48,7 +48,7 @@ async function fetchJson() {
         return Math.floor(Math.random() * Math.floor(max));
     };
     let i = getRandomInt(phrase.data.length);
-    phrasesDomSrring += `<div class="phrase"> ${phrase.data[i].phrase + ' ' + phrase.data[i].author}</div> `
+    phrasesDomSrring += `<div class="phrase"> ${phrase.data[i].phrase + '<br>' + phrase.data[i].author}</div> `
     phrasesContainer.innerHTML = phrasesDomSrring;
 };
 fetchJson();
