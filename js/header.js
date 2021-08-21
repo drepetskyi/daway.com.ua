@@ -7,7 +7,7 @@ headerContainer.innerHTML +=
 <a href="/dawaycomua/index.html">daway.news</a>
 </div>
 <ul>
-<li> <a href = "/dawaycomua/events/events.html"> Події </a> </li>
+<li> <a href = "../../events/events.html"> Події </a> </li>
 <li> <a href = "/dawaycomua/finance/finance.html"> Фінанси </a> </li>
 <li> <a href = "/dawaycomua/sports/sports.html"> Спорт </a> </li>
 <li> <a href = "/dawaycomua/life/life.html"> Життя </a> </li>
